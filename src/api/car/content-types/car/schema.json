@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand.brand"
+    },
+    "model": {
+      "type": "string"
+    },
+    "RokUvedeniDoProvozu": {
+      "type": "integer"
+    },
+    "Tachometr": {
+      "type": "integer"
+    },
+    "Karoserie": {
+      "type": "enumeration",
+      "enum": [
+        "Kabriolet/Roadster",
+        "Terénní vozidlo/Pickup/SUV",
+        "Malý vůz",
+        "Kombi",
+        "Limuzína",
+        "Sportovní vůz/Kupé",
+        "Dodávka/Minibus",
+        "Jiné"
+      ]
+    },
+    "Barva": {
+      "type": "string"
+    },
+    "STK": {
+      "type": "date"
+    },
+    "VIN": {
+      "type": "string"
+    },
+    "OdpocetDPH": {
+      "type": "boolean"
+    },
+    "Palivo": {
+      "type": "enumeration",
+      "enum": [
+        "Benzín",
+        "Diesel",
+        "Elektrický",
+        "Ethanol (FFV, E85 atd.)",
+        "Hybridní (dieselový/elektrický)",
+        "Hybridní (benzínový/elektrický)",
+        "Vodík",
+        "Autoplyn (LPG)",
+        "Zemní plyn",
+        "Plug-in hybrid",
+        "Jiné"
+      ]
+    },
+    "Prevodovka": {
+      "type": "enumeration",
+      "enum": [
+        "Manuální",
+        "Automatická",
+        "Poloautomatická"
+      ]
+    },
+    "Motor": {
+      "type": "string"
+    },
+    "Vykon": {
+      "type": "integer"
+    },
+    "Pohon": {
+      "type": "enumeration",
+      "enum": [
+        "Pohon předních kol",
+        "Pohon zadních kol",
+        "Pohon všech kol (4x4)"
+      ]
+    },
+    "Objem": {
+      "type": "integer"
+    },
+    "ServisniHistorie": {
+      "type": "boolean"
+    },
+    "PosledniServis": {
+      "type": "date"
+    },
+    "PrvniMajitel": {
+      "type": "boolean"
+    },
+    "ZemePuvodu": {
+      "type": "string"
+    },
+    "BezpecnostniSystemy": {
+      "type": "blocks"
+    },
+    "AsistencniSystemy": {
+      "type": "blocks"
+    },
+    "Zabezpeceni": {
+      "type": "blocks"
+    },
+    "Interier": {
+      "type": "blocks"
+    },
+    "Exterier": {
+      "type": "blocks"
+    },
+    "Infotainment": {
+      "type": "blocks"
+    },
+    "Ostatni": {
+      "type": "blocks"
+    }
+  }
+}
