@@ -19,8 +19,8 @@
     "model": {
       "type": "string"
     },
-    "RokUvedeniDoProvozu": {
-      "type": "integer"
+    "VProvozuOd": {
+      "type": "string"
     },
     "Tachometr": {
       "type": "integer"
@@ -123,6 +123,26 @@
     },
     "Ostatni": {
       "type": "blocks"
+    },
+    "HlavniFoto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "FotoVozidla": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

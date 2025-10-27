@@ -417,6 +417,13 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Exterier: Schema.Attribute.Blocks;
+    FotoVozidla: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    HlavniFoto: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     Infotainment: Schema.Attribute.Blocks;
     Interier: Schema.Attribute.Blocks;
     Karoserie: Schema.Attribute.Enumeration<
@@ -467,7 +474,6 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     >;
     PrvniMajitel: Schema.Attribute.Boolean;
     publishedAt: Schema.Attribute.DateTime;
-    RokUvedeniDoProvozu: Schema.Attribute.Integer;
     ServisniHistorie: Schema.Attribute.Boolean;
     STK: Schema.Attribute.Date;
     Tachometr: Schema.Attribute.Integer;
@@ -475,6 +481,7 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     VIN: Schema.Attribute.String;
+    VProvozuOd: Schema.Attribute.String;
     Vykon: Schema.Attribute.Integer;
     Zabezpeceni: Schema.Attribute.Blocks;
     ZemePuvodu: Schema.Attribute.String;
