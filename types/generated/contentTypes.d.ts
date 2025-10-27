@@ -475,7 +475,7 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
     PrvniMajitel: Schema.Attribute.Boolean;
     publishedAt: Schema.Attribute.DateTime;
     ServisniHistorie: Schema.Attribute.Boolean;
-    STK: Schema.Attribute.Date;
+    STK: Schema.Attribute.String;
     Tachometr: Schema.Attribute.Integer;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

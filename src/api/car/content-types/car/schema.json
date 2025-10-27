@@ -42,7 +42,7 @@
       "type": "string"
     },
     "STK": {
-      "type": "date"
+      "type": "string"
     },
     "VIN": {
       "type": "string"
