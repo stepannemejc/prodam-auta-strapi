@@ -438,6 +438,7 @@ export interface ApiCarCar extends Struct.CollectionTypeSchema {
         'Jin\u00E9',
       ]
     >;
+    KonecnaCena: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::car.car'> &
       Schema.Attribute.Private;

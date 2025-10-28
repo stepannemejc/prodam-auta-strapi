@@ -42,7 +42,8 @@
       "type": "string"
     },
     "STK": {
-      "type": "string"
+      "type": "string",
+      "regex": "^\\d{2}/(\\d{2}|\\d{4})$"
     },
     "VIN": {
       "type": "string"
@@ -143,6 +144,9 @@
         "videos",
         "audios"
       ]
+    },
+    "KonecnaCena": {
+      "type": "biginteger"
     }
   }
 }
